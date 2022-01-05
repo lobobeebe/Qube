@@ -385,6 +385,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -400,6 +401,20 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c439316de26a446b271560048745b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _FollowObject: {fileID: 797456684}
+  _Offset: {x: 0, y: 0, z: -10}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -602,12 +617,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 309ef0b547a11294ba8296f79dae6adc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Speed: 3
-  _JumpForce: 6
+  _Speed: 6
+  _JumpForce: 8
   _GroundCheckerRadius: 0.1
   _GroundCheckerOffset: {x: 0, y: -0.5}
   _GroundLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  fallMultiplier: 2
-  lowJumpMultiplier: 0.7
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
